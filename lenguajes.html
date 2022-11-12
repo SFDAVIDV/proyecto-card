@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lenguajes de Programacion</title>
     <link rel="stylesheet" href="lenguajes-estilos.css" />
+    <link rel="stylesheet" href="lenguajes-estilos-dark.css" />
+    <script
+      src="https://kit.fontawesome.com/15e1e14d1b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="contenedor">
@@ -13,6 +18,12 @@
         <h2 class="titulo">
           Selecciona el lenguaje de programacion de tu preferencia
         </h2>
+        <button class="btn" id="btn">
+          <span id="span"><i class="fa-solid fa-sun"></i></span>
+          <span id="span" class="dark-mode"
+            ><i class="fa-solid fa-moon"></i
+          ></span>
+        </button>
       </header>
       <main class="main">
         <div class="card html">
@@ -108,5 +119,6 @@
       </main>
     </section>
     <script src="lenguajes.js"></script>
+    <script src="dark-mode.js"></script>
   </body>
 </html>

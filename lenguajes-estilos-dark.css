@@ -1,0 +1,25 @@
+body.dark {
+  background: #2c2b2a;
+}
+
+body.dark .contenedor .header .titulo {
+  color: #fff;
+}
+
+body.dark .contenedor .main .card {
+  width: 100%;
+  background: #3f3d3a;
+}
+
+body.dark .contenedor .main .card p {
+  background: inherit;
+  color: #e3e4e5;
+}
+
+body.dark .contenedor .header .btn span.dark-mode i {
+  color: #000;
+}
+
+body.dark .contenedor .header .btn {
+  background: #e2e3e4;
+}
