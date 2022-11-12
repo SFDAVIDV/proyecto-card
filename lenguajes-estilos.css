@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 body {
   margin: 0;
@@ -42,14 +43,15 @@ body {
   padding: 15px;
   position: relative;
   z-index: 120;
-  /* background: #000; */
 }
 
 .contenedor .main .card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #a2a3a4;
   color: #fff;
   padding: 10px;
-  margin-left: 10px;
   position: absolute;
   width: 150px;
   height: 150px;
@@ -57,10 +59,11 @@ body {
   transform: translateX(0);
   transition: transform 0.5s ease-in;
   font-size: 0.7em;
+  font-weight: bold;
 }
 
 .contenedor .main .card .contenido-activo {
-  transform: translateX(50%);
+  transform: translateX(55%);
 }
 
 .contenedor .main .card img {
@@ -81,9 +84,47 @@ body {
   transform: translateX(-50%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) {
+  .contenedor .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor .main .card p {
+    width: 180px;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .contenedor .main .card img {
+    width: 190px;
+  }
+
+  .contenedor .main .card .javascript {
+    width: 210px;
+  }
+
+  .contenedor .main .card .contenido-activo {
+    transform: translateX(56%);
+  }
+}
+
+@media screen and (min-width: 1068px) {
+  .contenedor .main .card p {
+    font-size: 0.8em;
+    width: 200px;
+  }
+
+  .contenedor .main .card img {
+    width: 210px;
+  }
+
+  .contenedor .main .card .javascript {
+    width: 178px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contenedor {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 5px;
