@@ -24,7 +24,7 @@ body {
 
 .contenedor .header .titulo {
   font-size: 1.2rem;
-  color: #7864f5;
+  color: #232425;
   padding: 10px;
 }
 
@@ -49,8 +49,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #a2a3a4;
-  color: #fff;
+  background: #717273;
+  color: #f2f1f0;
   padding: 10px;
   position: absolute;
   width: 150px;
@@ -116,10 +116,6 @@ body {
 
   .contenedor .main .card img {
     width: 210px;
-  }
-
-  .contenedor .main .card .javascript {
-    width: 178px;
   }
 }
 
