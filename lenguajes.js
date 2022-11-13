@@ -1,5 +1,11 @@
 const card = document.querySelectorAll(".card img");
 
+/*
+  En esta funcion comprobamos el nombre de los elementos que necesitamos
+  Para que se ejecute la funciom que esta declarada en la linea 35,
+  Se necesita el nombre para que unicamente se efectuen los estilos para el elementos con
+  dicho nombre, evitando asi que todos se efectuen a la vez 
+*/
 const comprobar = (e) => {
   switch (e.target.name) {
     case "html":
@@ -23,6 +29,10 @@ const comprobar = (e) => {
   }
 };
 
+/*
+  Esta función es para comprobar si el elemento tenga una clase determinada,
+  si la tiene agregar una nueva clase para que se ejecute los estilos predeterminados
+*/
 const cards = (clase) => {
   const img = document.getElementById(`img-${clase}`);
   const parrafo = document.getElementById(`contenido-${clase}`);
@@ -32,11 +42,7 @@ const cards = (clase) => {
   ) {
     img.classList.toggle("img-activo");
     parrafo.classList.toggle("contenido-activo");
-  } else {
-    console.log("no la tiene");
   }
 };
 
-card.forEach((card) => {
-  card.addEventListener("click", comprobar);
-});
+card.forEach((card) => card.addEventListener("click", comprobar));
