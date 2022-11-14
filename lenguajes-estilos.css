@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 body {
   margin: 0;
@@ -59,13 +59,13 @@ body {
   height: 150px;
   z-index: 90;
   transform: translateX(0);
-  transition: transform 0.5s ease-in;
   font-size: 0.7em;
   font-weight: bold;
 }
 
 .contenedor .main .card .contenido-activo {
   transform: translateX(55%);
+  transition: transform 0.5s ease-in;
 }
 
 .contenedor .main .card img {
@@ -74,7 +74,7 @@ body {
   z-index: 100;
   transform: translateX(0);
   background: inherit;
-  transition: transform 0.5s ease-in;
+  cursor: pointer;
 }
 
 .contenedor .main .card .javascript {
@@ -84,6 +84,7 @@ body {
 
 .contenedor .main .card .img-activo {
   transform: translateX(-50%);
+  transition: transform 0.5s ease-in;
 }
 
 .contenedor .header .btn {
@@ -108,7 +109,7 @@ body {
   background: #e5dc1f;
   border-radius: 50px;
   transform: translateX(7%) translateY(-17%);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .contenedor .header .btn span.dark-mode::after {
@@ -161,7 +162,6 @@ body {
     height: 40px;
     width: 40px;
     transform: translateX(100%) translateY(-23%);
-    transition: all 0.5s ease-in;
   }
 
   .contenedor .header .btn span.dark-mode::after {
@@ -270,7 +270,6 @@ body {
     height: 40px;
     width: 40px;
     transform: translateX(100%) translateY(-23%);
-    transition: all 0.5s ease-in;
   }
   .contenedor .header .btn span.dark-mode::after {
     transform: translateX(-90%) translateY(-23%);
